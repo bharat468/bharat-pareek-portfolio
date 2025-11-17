@@ -44,6 +44,7 @@
       <h1 class="text-2xl font-bold text-cyan-400 tracking-wide">BHARAT KUMAR</h1>
     </div>
 
+    <!-- Desktop Menu -->
     <nav class="hidden md:flex gap-6 text-lg">
       <a href="#about" class="hover:text-cyan-400 transition duration-300">About</a>
       <a href="#experience" class="hover:text-cyan-400 transition duration-300">Experience</a>
@@ -52,21 +53,21 @@
       <a href="#contact" class="hover:text-cyan-400 transition duration-300">Contact</a>
     </nav>
 
-    <!-- Menu Button -->
-    <button id="menu-btn" class="md:hidden text-cyan-400 text-3xl focus:outline-none">
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden text-cyan-400 text-2xl focus:outline-none">
       <i class="fas fa-bars"></i>
     </button>
   </header>
 
-  <!-- SMALL DROPDOWN MOBILE MENU -->
-  <div id="mobile-menu" class="hidden fixed right-4 top-20 bg-black/80 border border-cyan-400/40 rounded-xl 
-       shadow-xl p-4 w-48 z-50 transform scale-90 opacity-0 transition-all duration-300">
+  <!-- Mobile Dropdown -->
+  <div id="mobile-menu"
+    class="hidden flex-col bg-black/90 text-white py-4 fixed top-16 right-4 w-52 rounded-xl border border-cyan-400/50 shadow-xl transition-all duration-300 opacity-0 scale-90">
 
-    <a href="#about" class="block py-2 px-3 rounded hover:bg-cyan-400 hover:text-black transition">About</a>
-    <a href="#experience" class="block py-2 px-3 rounded hover:bg-cyan-400 hover:text-black transition">Experience</a>
-    <a href="#projects" class="block py-2 px-3 rounded hover:bg-cyan-400 hover:text-black transition">Projects</a>
-    <a href="#skills" class="block py-2 px-3 rounded hover:bg-cyan-400 hover:text-black transition">Skills</a>
-    <a href="#contact" class="block py-2 px-3 rounded hover:bg-cyan-400 hover:text-black transition">Contact</a>
+    <a href="#about" class="menu-link block py-2 px-4 hover:bg-cyan-400 hover:text-black rounded">About</a>
+    <a href="#experience" class="menu-link block py-2 px-4 hover:bg-cyan-400 hover:text-black rounded">Experience</a>
+    <a href="#projects" class="menu-link block py-2 px-4 hover:bg-cyan-400 hover:text-black rounded">Projects</a>
+    <a href="#skills" class="menu-link block py-2 px-4 hover:bg-cyan-400 hover:text-black rounded">Skills</a>
+    <a href="#contact" class="menu-link block py-2 px-4 hover:bg-cyan-400 hover:text-black rounded">Contact</a>
 
   </div>
 
@@ -88,15 +89,15 @@
       My goal is to deliver smooth UI experiences with strong focus on design and performance.
     </p>
 
-    <div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
+    <div class="mt-6">
       <a href="#contact"
-        class="px-6 py-3 rounded-lg bg-gradient-to-r from-cyan-400 to-blue-400 text-black font-semibold hover:scale-105 transition duration-300 shadow-lg text-center">
+        class="px-6 py-3 rounded-lg bg-gradient-to-r from-cyan-400 to-blue-400 text-black font-semibold hover:scale-105 transition duration-300 shadow-lg">
         Get in Touch
       </a>
     </div>
   </section>
 
-  <!-- About -->
+  <!-- About Section -->
   <section id="about" class="px-8 py-16 text-center">
     <h2 class="text-3xl font-bold text-cyan-400 mb-8">About Me</h2>
     <p class="max-w-3xl mx-auto text-gray-300 leading-relaxed">
@@ -108,12 +109,87 @@
     </p>
   </section>
 
-  <!-- Others sections remain SAME -->
-  <!-- (Experience, Projects, Skills, Contact, Footer — unchanged for space) -->
+  <!-- Experience Section -->
+  <section id="experience" class="px-8 py-16 text-center bg-black/30">
+    <h2 class="text-3xl font-bold text-cyan-400 mb-10">Experience</h2>
+
+    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <div class="bg-white/10 border border-cyan-400/30 rounded-xl p-6 hover:border-cyan-400 transition shadow-md">
+        <h3 class="text-xl font-semibold text-cyan-300">Frontend Training</h3>
+        <p class="text-gray-300 mt-2">Full-Stack Learning | FSL | 2025</p>
+        <p class="text-gray-400 mt-2 text-sm">Focused on ReactJS, Tailwind, and responsive design techniques.</p>
+      </div>
+
+      <div class="bg-white/10 border border-cyan-400/30 rounded-xl p-6 hover:border-cyan-400 transition shadow-md">
+        <h3 class="text-xl font-semibold text-cyan-300">Internship</h3>
+        <p class="text-gray-300 mt-2">FSL | 6 Months</p>
+        <p class="text-gray-400 mt-2 text-sm">Worked on live client projects, improving user experience and interface design.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="px-8 py-16 text-center">
+    <h2 class="text-3xl font-bold text-cyan-400 mb-10">Projects</h2>
+
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+      <div class="bg-white/10 border border-cyan-400/20 p-4 rounded-xl hover:-translate-y-2 transition">
+        <img src="img/1 no. project.jpg" class="rounded-lg mb-4">
+        <h3 class="text-xl font-semibold text-cyan-400">Madhav Press Website</h3>
+        <a href="#" class="inline-block mt-2 px-4 py-2 bg-gradient-to-r from-cyan-400 to-blue-400 text-black rounded">View</a>
+      </div>
+
+      <div class="bg-white/10 border border-cyan-400/20 p-4 rounded-xl hover:-translate-y-2 transition">
+        <img src="img/calculetor.jpg" class="rounded-lg mb-4">
+        <h3 class="text-xl font-semibold text-cyan-400">Smart Calculator</h3>
+        <a href="#" class="inline-block mt-2 px-4 py-2 bg-gradient-to-r from-cyan-400 to-blue-400 text-black rounded">View</a>
+      </div>
+
+      <div class="bg-white/10 border border-cyan-400/20 p-4 rounded-xl hover:-translate-y-2 transition">
+        <img src="img/API.jpg" class="rounded-lg mb-4">
+        <h3 class="text-xl font-semibold text-cyan-400">API Fetch Project</h3>
+        <a href="#" class="inline-block mt-2 px-4 py-2 bg-gradient-to-r from-cyan-400 to-blue-400 text-black rounded">View</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="px-4 sm:px-8 py-16 text-center bg-black/30">
+    <h2 class="text-3xl font-bold text-cyan-400 mb-10">My Skills</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 max-w-5xl mx-auto">
+      <div class="bg-white/10 p-4 rounded-lg hover:bg-cyan-400 hover:text-black transition">HTML</div>
+      <div class="bg-white/10 p-4 rounded-lg hover:bg-cyan-400 hover:text-black transition">CSS</div>
+      <div class="bg-white/10 p-4 rounded-lg hover:bg-cyan-400 hover:text-black transition">Tailwind CSS</div>
+      <div class="bg-white/10 p-4 rounded-lg hover:bg-cyan-400 hover:text-black transition">JavaScript</div>
+      <div class="bg-white/10 p-4 rounded-lg hover:bg-cyan-400 hover:text-black transition">UI Design</div>
+      <div class="bg-white/10 p-4 rounded-lg hover:bg-cyan-400 hover:text-black transition">ReactJS</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="px-8 py-16 text-center">
+    <h2 class="text-3xl font-bold text-cyan-400 mb-10">Contact Me</h2>
+    <form class="max-w-2xl mx-auto bg-white/10 border border-cyan-400/30 rounded-xl p-8 space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full p-3 rounded bg-black/40 text-white outline-none">
+      <input type="email" placeholder="Your Email" class="w-full p-3 rounded bg-black/40 text-white outline-none">
+      <textarea placeholder="Your Message" rows="5" class="w-full p-3 rounded bg-black/40 text-white outline-none"></textarea>
+      <button class="w-full py-3 rounded-lg bg-gradient-to-r from-cyan-400 to-blue-400 text-black font-semibold">
+        Send Message
+      </button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black/60 text-center py-6">
+    <p class="text-gray-400">© 2025 Bharat Kumar. All Rights Reserved.</p>
+  </footer>
 
   <!-- Typed JS -->
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
+  <!-- Menu Script -->
   <script>
     new Typed("#typed", {
       strings: ["Frontend Developer", "Full Stack Developer", "UI Designer"],
@@ -122,16 +198,16 @@
       loop: true
     });
 
-    /** MOBILE DROPDOWN MENU **/
     const menuBtn = document.getElementById("menu-btn");
     const mobileMenu = document.getElementById("mobile-menu");
-    let menuOpen = false;
+    const links = document.querySelectorAll(".menu-link");
 
-    menuBtn.addEventListener("click", (e) => {
-      e.stopPropagation();
-      menuOpen = !menuOpen;
+    let open = false;
 
-      if (menuOpen) {
+    menuBtn.addEventListener("click", () => {
+      open = !open;
+
+      if (open) {
         mobileMenu.classList.remove("hidden");
         setTimeout(() => {
           mobileMenu.classList.remove("opacity-0", "scale-90");
@@ -139,25 +215,28 @@
 
         menuBtn.innerHTML = `<i class="fas fa-times"></i>`;
       } else {
-        mobileMenu.classList.add("opacity-0", "scale-90");
-        setTimeout(() => mobileMenu.classList.add("hidden"), 300);
-
-        menuBtn.innerHTML = `<i class="fas fa-bars"></i>`;
+        closeMenu();
       }
     });
 
-    // CLOSE WHEN CLICK OUTSIDE
-    document.addEventListener("click", () => {
-      if (menuOpen) {
-        mobileMenu.classList.add("opacity-0", "scale-90");
-        setTimeout(() => mobileMenu.classList.add("hidden"), 300);
-        menuBtn.innerHTML = `<i class="fas fa-bars"></i>`;
-        menuOpen = false;
-      }
-    });
+    function closeMenu() {
+      mobileMenu.classList.add("opacity-0", "scale-90");
+      setTimeout(() => mobileMenu.classList.add("hidden"), 250);
+      menuBtn.innerHTML = `<i class="fas fa-bars"></i>`;
+      open = false;
+    }
 
-    // Prevent closing when clicking inside menu
-    mobileMenu.addEventListener("click", (e) => e.stopPropagation());
+    links.forEach(link => {
+      link.addEventListener("click", (e) => {
+        const targetId = link.getAttribute("href");
+        const target = document.querySelector(targetId);
+
+        closeMenu();
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: "smooth" });
+        }, 250);
+      });
+    });
   </script>
 
 </body>
